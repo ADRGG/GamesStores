@@ -1,0 +1,29 @@
+<div class="container align-items-center">
+
+    <div class="row gx-3 gy-5 mt-5">
+
+        @for ( store of stores.results; track store ) {
+
+            <div class="col-4">
+
+                <div class="card px-3 mt-5">
+
+                    <div class="card-header bg-transparent border-bottom-0">
+                        <img class="card-img-top rounded-pill img-thumbnail height-adjust" [src]="store.image_background">
+                        <h4 class="title text-center">{{store.name}}</h4>
+                    </div>
+                    
+                    <div class="card-body">
+                        <p>Nº juegos: {{store.games_count}}</p>
+                        <p><a [routerLink]="'/tienda/'+store.id" target="_blank">Acceso tienda</a></p>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+
+</div>
