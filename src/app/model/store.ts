@@ -9,6 +9,6 @@ export interface StoreI {
     games_count: number,
     image_background: string,
     description: string,
-    games?: GameI[]
+    games: GameI[]
 
 }

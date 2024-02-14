@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: var(--bs-secondary-color) !important;
+}
+
+.bg-whitesmoke {
+    background-color: whitesmoke !important;
+}

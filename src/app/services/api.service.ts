@@ -47,20 +47,30 @@ export class ApiService {
 
   }
 
-  findStoresById( id: number ): Observable<StoreI> {
+  findStoreById( id: number ): Observable<StoreI> {
 
     return this.http.get<StoreI>( this.baseURL + '/stores/' + id.toString(), {
-      headers: this.headers,
-      params: this.params
+      headers: {
+        "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
+        "x-rapidapi-key": "45f632c4eemsh81a9c692e52deb7p18cd42jsn0cac7a27ace0"
+      },
+      params: {
+        "key": "c13d9de91ed24b13abd23ec72a84ddbe"
+      }
     } )
 
   }
 
-  findGamesById( id: number ): Observable<GameI> {
+  findGameById( id: number ): Observable<GameI> {
 
     return this.http.get<GameI>( this.baseURL + '/games/' + id.toString(), {
-      headers: this.headers,
-      params: this.params
+      headers: {
+        "x-rapidapi-host": "rawg-video-games-database.p.rapidapi.com",
+        "x-rapidapi-key": "45f632c4eemsh81a9c692e52deb7p18cd42jsn0cac7a27ace0"
+      },
+      params: {
+        "key": "c13d9de91ed24b13abd23ec72a84ddbe"
+      }
     } )
 
   }

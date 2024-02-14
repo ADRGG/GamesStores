@@ -4,7 +4,6 @@ import { TiendaComponent } from './components/tienda/tienda.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'tienda', component: TiendaComponent},
     { path: 'tienda/:id', component: TiendaComponent},
     {  path: '**',   redirectTo: '', pathMatch: 'full' }
 ];
